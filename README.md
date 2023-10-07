@@ -38,7 +38,7 @@ The same structure goes to the facility:
 Facility("X", 4, 1)
 ```
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Client/Facility keys must be unique.
 > e.g. There can be no 2 Clients with the same key 'A'.
 
