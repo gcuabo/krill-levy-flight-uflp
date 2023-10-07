@@ -1,5 +1,10 @@
 # Krill Heard with Levy Flight Applied to Uncapacitated Facility Location Problem
 
+This uses the Krill Herd Algorithm as a global search and further refining the solution
+with Levy Flight Algorith as the local search.
+
+The algorithm is then attempted to be used to solve the Uncapacitated Facility Location Problem.
+
 ## Requirements
 
 This requires python `3.11.4`. Requirements are listed in the requirements file,
