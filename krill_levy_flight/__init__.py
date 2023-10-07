@@ -7,6 +7,8 @@ from .krill import (distance_of_coordinates, fitness, generate_random_solution,
 from .levy_flight import generate_levy_flight_solution
 from .logger import logger
 
+__all__ = ("run_krill_algo",)
+
 
 def run_krill_algo() -> tuple:
     """Run krill-herd algorithm
