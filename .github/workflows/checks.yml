@@ -1,0 +1,40 @@
+name: Checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Run linters
+        uses: pre-commit/action@v3.0.0
+
+  runs-ok:
+    name: Run checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.4' 
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run main.py
+        run: |
+          python main.py
