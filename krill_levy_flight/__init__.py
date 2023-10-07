@@ -2,8 +2,12 @@ import numpy as np
 
 from .conf import KRILL_MAX_ITER, KRILL_NUM_KRILL
 from .const import CLIENTS, FACILITIES
-from .krill import (distance_of_coordinates, fitness, generate_random_solution,
-                    get_facility_of_client)
+from .krill import (
+    distance_of_coordinates,
+    fitness,
+    generate_random_solution,
+    get_facility_of_client,
+)
 from .levy_flight import generate_levy_flight_solution
 from .logger import logger
 
