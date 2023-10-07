@@ -34,6 +34,5 @@ Facility("X", 4, 1)
 ```
 
 > [!IMPORTANT]  
-> Client/Facility keys must be unique. e.g. There can be no 2 Clients with the same key 'A'.
-
-** Client/Facility keys must be unique. There can be no 2 Clients with the same key 'A' ***
+> Client/Facility keys must be unique.
+> e.g. There can be no 2 Clients with the same key 'A'.
